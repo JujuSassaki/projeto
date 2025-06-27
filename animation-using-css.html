@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animação com HTML e CSS</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+
+        @keyframes mover {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 300px;
+            }
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: mover 2s infinite alternate ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="quadrado"></div>
+
+
+</body>
+
+
+
+</html>
